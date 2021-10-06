@@ -18,7 +18,7 @@ DATE=`date "+%Y-%d-%m"`
 
 echo "Creating application--------------------"
 echo "Today is $DATE" >> ./info.html
-echo "Proudly present to you by $HTTPD_VERSION !!!" >> ./info.html" 
+echo "Proudly present to you by $HTTPD_VERSION !!!" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
 
