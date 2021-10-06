@@ -10,6 +10,16 @@ config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
 
+echo "Initializing application ---------------"
+
+cp -Rf ./tmp/src/*.html ./
+
+$DATE=`date +%Y-%d-%m`
+
+echo "Creating application--------------------"
+echo "Today is $DATE" >> ./info.html
+echo "Proudly present to you by $HTTPD_VERSION !!!" >> ./info.html" 
+
 ######## CUSTOMIZATION ENDS HERE ############
 
 if [ -d ./httpd-cfg ]; then
