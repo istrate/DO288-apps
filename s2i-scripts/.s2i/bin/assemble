@@ -10,6 +10,18 @@ config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
 
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Application initialize ...."
+
+cp -Rf /tmp/src/*.html ./
+
+DATE=`date -I`
+
+echo "Some message in index" >> ./index.html
+
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Create application ...."
+
+echo " HTTP version is $HTTPD_VERSION, on $DATE" >> ./info.html
+
 
 ######## CUSTOMIZATION ENDS HERE ##############
 
