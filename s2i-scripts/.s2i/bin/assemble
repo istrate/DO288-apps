@@ -14,7 +14,7 @@ echo "Initializing application ---------------"
 
 cp -Rf /tmp/src/*.html ./
 
-$DATE=`date +%Y-%d-%m`
+$DATE=`date "+%Y-%d-%m"`
 
 echo "Creating application--------------------"
 echo "Today is $DATE" >> ./info.html
